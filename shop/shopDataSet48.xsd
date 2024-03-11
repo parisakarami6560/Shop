@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="shopDataSet48" targetNamespace="http://tempuri.org/shopDataSet48.xsd" xmlns:mstns="http://tempuri.org/shopDataSet48.xsd" xmlns="http://tempuri.org/shopDataSet48.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="shopConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="shopConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.shop.Properties.Settings.GlobalReference.Default.shopConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="factorTableAdapter" GeneratorDataComponentClassName="factorTableAdapter" Name="factor" UserDataComponentName="factorTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="shopConnectionString1 (Settings)" DbObjectName="shop.dbo.factor" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT code_saled, name_product, number_product_s, perproduct, total_pay, number_saled, tax_saledint, totalwithtax, data_saled, time_saled, kindpay, fullname FROM dbo.factor</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="code_saled" DataSetColumn="code_saled" />
+              <Mapping SourceColumn="name_product" DataSetColumn="name_product" />
+              <Mapping SourceColumn="number_product_s" DataSetColumn="number_product_s" />
+              <Mapping SourceColumn="perproduct" DataSetColumn="perproduct" />
+              <Mapping SourceColumn="total_pay" DataSetColumn="total_pay" />
+              <Mapping SourceColumn="number_saled" DataSetColumn="number_saled" />
+              <Mapping SourceColumn="tax_saledint" DataSetColumn="tax_saledint" />
+              <Mapping SourceColumn="totalwithtax" DataSetColumn="totalwithtax" />
+              <Mapping SourceColumn="data_saled" DataSetColumn="data_saled" />
+              <Mapping SourceColumn="time_saled" DataSetColumn="time_saled" />
+              <Mapping SourceColumn="kindpay" DataSetColumn="kindpay" />
+              <Mapping SourceColumn="fullname" DataSetColumn="fullname" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="shopDataSet48" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="shopDataSet48" msprop:Generator_UserDSName="shopDataSet48">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="factor" msprop:Generator_TableClassName="factorDataTable" msprop:Generator_TableVarName="tablefactor" msprop:Generator_TablePropName="factor" msprop:Generator_RowDeletingName="factorRowDeleting" msprop:Generator_RowChangingName="factorRowChanging" msprop:Generator_RowEvHandlerName="factorRowChangeEventHandler" msprop:Generator_RowDeletedName="factorRowDeleted" msprop:Generator_UserTableName="factor" msprop:Generator_RowChangedName="factorRowChanged" msprop:Generator_RowEvArgName="factorRowChangeEvent" msprop:Generator_RowClassName="factorRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code_saled" msprop:Generator_ColumnVarNameInTable="columncode_saled" msprop:Generator_ColumnPropNameInRow="code_saled" msprop:Generator_ColumnPropNameInTable="code_saledColumn" msprop:Generator_UserColumnName="code_saled" type="xs:int" />
+              <xs:element name="name_product" msprop:Generator_ColumnVarNameInTable="columnname_product" msprop:Generator_ColumnPropNameInRow="name_product" msprop:Generator_ColumnPropNameInTable="name_productColumn" msprop:Generator_UserColumnName="name_product" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="number_product_s" msprop:Generator_ColumnVarNameInTable="columnnumber_product_s" msprop:Generator_ColumnPropNameInRow="number_product_s" msprop:Generator_ColumnPropNameInTable="number_product_sColumn" msprop:Generator_UserColumnName="number_product_s" type="xs:int" minOccurs="0" />
+              <xs:element name="perproduct" msprop:Generator_ColumnVarNameInTable="columnperproduct" msprop:Generator_ColumnPropNameInRow="perproduct" msprop:Generator_ColumnPropNameInTable="perproductColumn" msprop:Generator_UserColumnName="perproduct" type="xs:int" minOccurs="0" />
+              <xs:element name="total_pay" msprop:Generator_ColumnVarNameInTable="columntotal_pay" msprop:Generator_ColumnPropNameInRow="total_pay" msprop:Generator_ColumnPropNameInTable="total_payColumn" msprop:Generator_UserColumnName="total_pay" type="xs:int" minOccurs="0" />
+              <xs:element name="number_saled" msprop:Generator_ColumnVarNameInTable="columnnumber_saled" msprop:Generator_ColumnPropNameInRow="number_saled" msprop:Generator_ColumnPropNameInTable="number_saledColumn" msprop:Generator_UserColumnName="number_saled" type="xs:int" minOccurs="0" />
+              <xs:element name="tax_saledint" msprop:Generator_ColumnVarNameInTable="columntax_saledint" msprop:Generator_ColumnPropNameInRow="tax_saledint" msprop:Generator_ColumnPropNameInTable="tax_saledintColumn" msprop:Generator_UserColumnName="tax_saledint" type="xs:int" minOccurs="0" />
+              <xs:element name="totalwithtax" msprop:Generator_ColumnVarNameInTable="columntotalwithtax" msprop:Generator_ColumnPropNameInRow="totalwithtax" msprop:Generator_ColumnPropNameInTable="totalwithtaxColumn" msprop:Generator_UserColumnName="totalwithtax" type="xs:int" minOccurs="0" />
+              <xs:element name="data_saled" msprop:Generator_ColumnVarNameInTable="columndata_saled" msprop:Generator_ColumnPropNameInRow="data_saled" msprop:Generator_ColumnPropNameInTable="data_saledColumn" msprop:Generator_UserColumnName="data_saled" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="time_saled" msprop:Generator_ColumnVarNameInTable="columntime_saled" msprop:Generator_ColumnPropNameInRow="time_saled" msprop:Generator_ColumnPropNameInTable="time_saledColumn" msprop:Generator_UserColumnName="time_saled" type="xs:duration" minOccurs="0" />
+              <xs:element name="kindpay" msprop:Generator_ColumnVarNameInTable="columnkindpay" msprop:Generator_ColumnPropNameInRow="kindpay" msprop:Generator_ColumnPropNameInTable="kindpayColumn" msprop:Generator_UserColumnName="kindpay" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fullname" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnfullname" msprop:Generator_ColumnPropNameInRow="fullname" msprop:Generator_ColumnPropNameInTable="fullnameColumn" msprop:Generator_UserColumnName="fullname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="61" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:factor" />
+      <xs:field xpath="mstns:code_saled" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

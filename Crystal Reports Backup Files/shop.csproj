@@ -1,0 +1,1074 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7AA75931-1604-41BE-90AB-E4F49BEE43EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>shop</RootNamespace>
+    <AssemblyName>shop</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer.Designer.cs">
+      <DependentUpon>customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formprint.Designer.cs">
+      <DependentUpon>Formprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="liststaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="liststaff.Designer.cs">
+      <DependentUpon>liststaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="list_employment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="list_employment.Designer.cs">
+      <DependentUpon>list_employment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="list_manag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="list_manag.Designer.cs">
+      <DependentUpon>list_manag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pruceduredatesaled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pruceduredatesaled.Designer.cs">
+      <DependentUpon>pruceduredatesaled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="riportshow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="riportshow.Designer.cs">
+      <DependentUpon>riportshow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shop.cs" />
+    <Compile Include="shopDataSet.cs">
+      <DependentUpon>shopDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet21.cs">
+      <DependentUpon>shopDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet30.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet30.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet31.cs">
+      <DependentUpon>shopDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet32.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet32.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet33.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet33.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet34.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet34.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet35.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet35.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet36.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet36.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet37.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet37.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet38.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet38.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet39.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet39.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet40.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet40.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet41.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet41.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet42.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet42.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet43.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet43.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet44.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet44.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet45.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet45.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet46.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet46.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet47.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet47.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet48.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet48.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet9.cs">
+      <DependentUpon>shopDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sho_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sho_report.Designer.cs">
+      <DependentUpon>sho_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stor.Designer.cs">
+      <DependentUpon>stor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supplier.Designer.cs">
+      <DependentUpon>supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="فاکتور فروش.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="فاکتور فروش.Designer.cs">
+      <DependentUpon>فاکتور فروش.cs</DependentUpon>
+    </Compile>
+    <Compile Include="فاکتورخرید.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="فاکتورخرید.Designer.cs">
+      <DependentUpon>فاکتورخرید.cs</DependentUpon>
+    </Compile>
+    <Compile Include="لیست خریدcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="لیست خریدcs.Designer.cs">
+      <DependentUpon>لیست خریدcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="لیست فروش.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="لیست فروش.Designer.cs">
+      <DependentUpon>لیست فروش.cs</DependentUpon>
+    </Compile>
+    <Compile Include="گزارشات.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="گزارشات.Designer.cs">
+      <DependentUpon>گزارشات.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer.resx">
+      <DependentUpon>customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.aa.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formprint.resx">
+      <DependentUpon>Formprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="liststaff.resx">
+      <DependentUpon>liststaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="list_employment.resx">
+      <DependentUpon>list_employment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="list_manag.resx">
+      <DependentUpon>list_manag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="pruceduredatesaled.resx">
+      <DependentUpon>pruceduredatesaled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="riportshow.resx">
+      <DependentUpon>riportshow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stor.resx">
+      <DependentUpon>stor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supplier.resx">
+      <DependentUpon>supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="فاکتور فروش.resx">
+      <DependentUpon>فاکتور فروش.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="فاکتورخرید.resx">
+      <DependentUpon>فاکتورخرید.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="لیست خریدcs.resx">
+      <DependentUpon>لیست خریدcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="لیست فروش.resx">
+      <DependentUpon>لیست فروش.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="گزارشات.resx">
+      <DependentUpon>گزارشات.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="shopDataSet.xsc">
+      <DependentUpon>shopDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet.xss">
+      <DependentUpon>shopDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet1.xsc">
+      <DependentUpon>shopDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet1.xss">
+      <DependentUpon>shopDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet10.xsc">
+      <DependentUpon>shopDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet10.xss">
+      <DependentUpon>shopDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet11.xsc">
+      <DependentUpon>shopDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet11.xss">
+      <DependentUpon>shopDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet12.xsc">
+      <DependentUpon>shopDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet12.xss">
+      <DependentUpon>shopDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet13.xsc">
+      <DependentUpon>shopDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet13.xss">
+      <DependentUpon>shopDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet14.xsc">
+      <DependentUpon>shopDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet14.xss">
+      <DependentUpon>shopDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet15.xsc">
+      <DependentUpon>shopDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet15.xss">
+      <DependentUpon>shopDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet16.xsc">
+      <DependentUpon>shopDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet16.xss">
+      <DependentUpon>shopDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet17.xsc">
+      <DependentUpon>shopDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet17.xss">
+      <DependentUpon>shopDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet18.xsc">
+      <DependentUpon>shopDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet18.xss">
+      <DependentUpon>shopDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet19.xsc">
+      <DependentUpon>shopDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet19.xss">
+      <DependentUpon>shopDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet2.xsc">
+      <DependentUpon>shopDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet2.xss">
+      <DependentUpon>shopDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet20.xsc">
+      <DependentUpon>shopDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet20.xss">
+      <DependentUpon>shopDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet21.xsc">
+      <DependentUpon>shopDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet21.xss">
+      <DependentUpon>shopDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet22.xsc">
+      <DependentUpon>shopDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet22.xss">
+      <DependentUpon>shopDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet23.xsc">
+      <DependentUpon>shopDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet23.xss">
+      <DependentUpon>shopDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet24.xsc">
+      <DependentUpon>shopDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet24.xss">
+      <DependentUpon>shopDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet25.xsc">
+      <DependentUpon>shopDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet25.xss">
+      <DependentUpon>shopDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet26.xsc">
+      <DependentUpon>shopDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet26.xss">
+      <DependentUpon>shopDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet27.xsc">
+      <DependentUpon>shopDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet27.xss">
+      <DependentUpon>shopDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet28.xsc">
+      <DependentUpon>shopDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet28.xss">
+      <DependentUpon>shopDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet29.xsc">
+      <DependentUpon>shopDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet29.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet29.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet29.xss">
+      <DependentUpon>shopDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet3.xsc">
+      <DependentUpon>shopDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet3.xss">
+      <DependentUpon>shopDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet30.xsc">
+      <DependentUpon>shopDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet30.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet30.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet30.xss">
+      <DependentUpon>shopDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet31.xsc">
+      <DependentUpon>shopDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet31.xss">
+      <DependentUpon>shopDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet32.xsc">
+      <DependentUpon>shopDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet32.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet32.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet32.xss">
+      <DependentUpon>shopDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet33.xsc">
+      <DependentUpon>shopDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet33.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet33.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet33.xss">
+      <DependentUpon>shopDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet34.xsc">
+      <DependentUpon>shopDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet34.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet34.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet34.xss">
+      <DependentUpon>shopDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet35.xsc">
+      <DependentUpon>shopDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet35.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet35.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet35.xss">
+      <DependentUpon>shopDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet36.xsc">
+      <DependentUpon>shopDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet36.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet36.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet36.xss">
+      <DependentUpon>shopDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet37.xsc">
+      <DependentUpon>shopDataSet37.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet37.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet37.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet37.xss">
+      <DependentUpon>shopDataSet37.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet38.xsc">
+      <DependentUpon>shopDataSet38.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet38.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet38.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet38.xss">
+      <DependentUpon>shopDataSet38.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet39.xsc">
+      <DependentUpon>shopDataSet39.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet39.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet39.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet39.xss">
+      <DependentUpon>shopDataSet39.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet4.xsc">
+      <DependentUpon>shopDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet4.xss">
+      <DependentUpon>shopDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet40.xsc">
+      <DependentUpon>shopDataSet40.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet40.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet40.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet40.xss">
+      <DependentUpon>shopDataSet40.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet41.xsc">
+      <DependentUpon>shopDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet41.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet41.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet41.xss">
+      <DependentUpon>shopDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet42.xsc">
+      <DependentUpon>shopDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet42.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet42.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet42.xss">
+      <DependentUpon>shopDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet43.xsc">
+      <DependentUpon>shopDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet43.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet43.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet43.xss">
+      <DependentUpon>shopDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet44.xsc">
+      <DependentUpon>shopDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet44.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet44.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet44.xss">
+      <DependentUpon>shopDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet45.xsc">
+      <DependentUpon>shopDataSet45.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet45.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet45.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet45.xss">
+      <DependentUpon>shopDataSet45.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet46.xsc">
+      <DependentUpon>shopDataSet46.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet46.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet46.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet46.xss">
+      <DependentUpon>shopDataSet46.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet47.xsc">
+      <DependentUpon>shopDataSet47.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet47.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet47.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet47.xss">
+      <DependentUpon>shopDataSet47.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet48.xsc">
+      <DependentUpon>shopDataSet48.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet48.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet48.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet48.xss">
+      <DependentUpon>shopDataSet48.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet5.xsc">
+      <DependentUpon>shopDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet5.xss">
+      <DependentUpon>shopDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet6.xsc">
+      <DependentUpon>shopDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet6.xss">
+      <DependentUpon>shopDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet7.xsc">
+      <DependentUpon>shopDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet7.xss">
+      <DependentUpon>shopDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet8.xsc">
+      <DependentUpon>shopDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet8.xss">
+      <DependentUpon>shopDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet9.xsc">
+      <DependentUpon>shopDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet9.xss">
+      <DependentUpon>shopDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
